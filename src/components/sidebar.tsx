@@ -2,6 +2,12 @@ import { FileText, FolderClosed } from "lucide-react"
 import { ChevronDownIcon } from "@radix-ui/react-icons"
 import { useState, useEffect } from "react"
 
+// Import markdown files directly
+import workMd from '../content/work.md?raw'
+import sideProjectsMd from '../content/side-projects.md?raw'
+import personalMd from '../content/personal.md?raw'
+import quickLinksMd from '../content/quick-links.md?raw'
+
 interface SidebarProps {
   onFileSelect: (content: string) => void
 }
@@ -14,33 +20,21 @@ export function Sidebar({ onFileSelect }: SidebarProps) {
 
   useEffect(() => {
     // Load all markdown files
-    const loadMarkdownFiles = async () => {
-      const files = {
-        'work': '/src/content/work.md',
-        'side projects': '/src/content/side-projects.md',
-        'personal': '/src/content/personal.md',
-        'quick links': '/src/content/quick-links.md'
-      }
-
-      const content: Record<string, string> = {}
-      
-      for (const [key, path] of Object.entries(files)) {
-        try {
-          const response = await fetch(path)
-          content[key] = await response.text()
-        } catch (error) {
-          console.error(`Error loading ${path}:`, error)
-          content[key] = '# Error\n\nFailed to load content.'
-        }
+    const loadMarkdownFiles = () => {
+      const content: Record<string, string> = {
+        'work': workMd,
+        'side projects': sideProjectsMd,
+        'personal': personalMd,
+        'quick links': quickLinksMd
       }
 
       setMarkdownContent(content)
-      // Load "work" content by default after all content is loaded
+      // Load "work" content by default
       onFileSelect(content['work'])
     }
 
     loadMarkdownFiles()
-  }, [onFileSelect]) // Add onFileSelect to dependencies
+  }, [onFileSelect])
 
   const handleFolderClick = (name: string) => {
     // Only toggle folder open state
