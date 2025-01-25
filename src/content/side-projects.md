@@ -1,5 +1,5 @@
 # ⚱️ Side projects
 
-- https://www.predictyour.run/ 
-- https://jsonlinter.net/
-- https://www.circuit.al/
+- [predictyour.run](https://www.predictyour.run/)
+- [jsonlinter.net](https://jsonlinter.net/)
+- [circuit.al](https://www.circuit.al/)
