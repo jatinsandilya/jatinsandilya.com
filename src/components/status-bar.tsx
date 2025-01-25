@@ -1,4 +1,7 @@
-import { GitBranch, Play, Bug, Split, Bell } from "lucide-react"
+import { GitBranch, Play, Bug, Split, Bell } from "lucide-react";
+
+// Add this declaration to help TypeScript understand the global constant
+declare const __LAST_UPDATE__: string;
 
 export function StatusBar() {
   return (
@@ -23,11 +26,11 @@ export function StatusBar() {
       </div>
       <div className="flex-1" />
       <div className="flex items-center space-x-4 ">
+        <span className="text-gray-400">Last updated: {__LAST_UPDATE__}</span>
         <span>Go Live</span>
         <span>VS Code</span>
         <Bell className="w-3 h-3 " />
       </div>
     </div>
-  )
+  );
 }
-
