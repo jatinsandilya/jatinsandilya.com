@@ -70,14 +70,6 @@ export function Sidebar({ onFileSelect }: SidebarProps) {
             filePath="/src/content/work.md"
           />
           <FileTreeItem 
-            name="side projects" 
-            type="folder" 
-            isOpen={openFolders['side projects']}
-            onFolderClick={() => handleFolderClick('side projects')}
-            onFileClick={() => handleFileClick('side projects')}
-            filePath="/src/content/side-projects.md"
-          />
-          <FileTreeItem 
             name="quick links" 
             type="folder" 
             isOpen={openFolders['quick links']}
