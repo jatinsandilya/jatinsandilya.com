@@ -1,0 +1,3 @@
+# Personal
+
+A bit about my interests... 
