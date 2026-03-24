@@ -7,6 +7,7 @@ import workMd from '../content/work.md?raw'
 import personalMd from '../content/personal.md?raw'
 import quickLinksMd from '../content/quick-links.md?raw'
 import angelInvestmentsMd from '../content/angel.md?raw'
+import educationMd from '../content/education.md?raw'
 
 interface SidebarProps {
   onFileSelect: (content: string) => void
@@ -15,7 +16,10 @@ interface SidebarProps {
 export function Sidebar({ onFileSelect }: SidebarProps) {
   const [markdownContent, setMarkdownContent] = useState<Record<string, string>>({})
   const [openFolders, setOpenFolders] = useState<Record<string, boolean>>({
-    'work': true, // Default open state
+    'work': true,
+    'quick links': true,
+    'angel': true,
+    'education': true,
   })
 
   useEffect(() => {
@@ -25,7 +29,8 @@ export function Sidebar({ onFileSelect }: SidebarProps) {
         'work': workMd,
         'personal': personalMd,
         'quick links': quickLinksMd,
-        'angel': angelInvestmentsMd
+        'angel': angelInvestmentsMd,
+        'education': educationMd
       }
 
       setMarkdownContent(content)
@@ -84,6 +89,14 @@ export function Sidebar({ onFileSelect }: SidebarProps) {
             onFolderClick={() => handleFolderClick('angel')}
             onFileClick={() => handleFileClick('angel')}
             filePath="/src/content/angel.md"
+          />
+          <FileTreeItem
+            name="education"
+            type="folder"
+            isOpen={openFolders['education']}
+            onFolderClick={() => handleFolderClick('education')}
+            onFileClick={() => handleFileClick('education')}
+            filePath="/src/content/education.md"
           />
         </div>
       </div>
