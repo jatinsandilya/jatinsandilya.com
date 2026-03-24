@@ -1,6 +1,8 @@
 # Angel Investments
 
-OSS (open-source) software & devtools are my jam. Hit me up if you're starting up in this space, I'd love to be an early user.
+- My form of capitalism is making things that I want in the world — either by joining that company, building that company, or helping (as an angel) by being a small part of that company.
+
+- OSS (open-source) software, devtools & applied AI are my jam. Hit me up if you're starting up in this space, I'd love to be an early user, give product feedback, and/or connect you to the right investors to help you close your round.
 
 Smol check investor in:
 
