@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 
 // Import markdown files directly
 import workMd from '../content/work.md?raw'
-import sideProjectsMd from '../content/side-projects.md?raw'
 import personalMd from '../content/personal.md?raw'
 import quickLinksMd from '../content/quick-links.md?raw'
 import angelInvestmentsMd from '../content/angel.md?raw'
@@ -24,7 +23,6 @@ export function Sidebar({ onFileSelect }: SidebarProps) {
     const loadMarkdownFiles = () => {
       const content: Record<string, string> = {
         'work': workMd,
-        'side projects': sideProjectsMd,
         'personal': personalMd,
         'quick links': quickLinksMd,
         'angel': angelInvestmentsMd
