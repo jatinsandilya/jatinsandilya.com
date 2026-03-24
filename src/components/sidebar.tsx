@@ -7,6 +7,7 @@ import workMd from '../content/work.md?raw'
 import sideProjectsMd from '../content/side-projects.md?raw'
 import personalMd from '../content/personal.md?raw'
 import quickLinksMd from '../content/quick-links.md?raw'
+import angelInvestmentsMd from '../content/angel.md?raw'
 
 interface SidebarProps {
   onFileSelect: (content: string) => void
@@ -25,7 +26,8 @@ export function Sidebar({ onFileSelect }: SidebarProps) {
         'work': workMd,
         'side projects': sideProjectsMd,
         'personal': personalMd,
-        'quick links': quickLinksMd
+        'quick links': quickLinksMd,
+        'angel': angelInvestmentsMd
       }
 
       setMarkdownContent(content)
@@ -69,13 +71,21 @@ export function Sidebar({ onFileSelect }: SidebarProps) {
             onFileClick={() => handleFileClick('work')}
             filePath="/src/content/work.md"
           />
-          <FileTreeItem 
-            name="quick links" 
-            type="folder" 
+          <FileTreeItem
+            name="quick links"
+            type="folder"
             isOpen={openFolders['quick links']}
             onFolderClick={() => handleFolderClick('quick links')}
             onFileClick={() => handleFileClick('quick links')}
             filePath="/src/content/quick-links.md"
+          />
+          <FileTreeItem
+            name="angel"
+            type="folder"
+            isOpen={openFolders['angel']}
+            onFolderClick={() => handleFolderClick('angel')}
+            onFileClick={() => handleFileClick('angel')}
+            filePath="/src/content/angel.md"
           />
         </div>
       </div>

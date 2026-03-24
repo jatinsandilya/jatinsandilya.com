@@ -4,20 +4,18 @@
 
 - OSS (open-source) software & devtools are my jam. Hit me up if you're starting up in this space, I'd love to be an early user. 
 
-- I'm currently working as a Product Engineer @ [Ampersand](https://withamperand.com)
+- I'm currently building a new company in AI, in San Francisco
 
 
 ## Here's a little sneak peek at my body of work 🛠️
 
-- #### Product Engineering @ [Ampersand](https://withamperand.com) 
+- #### Head of AI @ [Ampersand](https://withamperand.com) 
 
 
 - #### CEO & Founder @ [Revert](https://github.com/revertinc/revert) (Acquired)
 
 
-- #### Senior Software Engineer @ [Flux.ai](https://flux.ai) 
-
-- #### Founding Engineer @ Mela YC (S19)
+- #### Senior Software Engineer @ [Flux.ai](https://flux.ai) (Series B by BCV)
 
 - #### Software Engineer (Revenue & Growth) @ [Swiggy](https://swiggy.in)
 
