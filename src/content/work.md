@@ -1,11 +1,10 @@
 # Work 
 
-- Hey👋🏻 I am Jatin! I'm an engineer/entrepreneur who loves building products. I code but I am more T-shaped than usual. I've done product management, early-stage sales, Angel invested (tiny checks $$) in companies and started them.
+- Hey👋🏻 I am Jatin — previously, I was a Founder at [Revert](https://github.com/revertinc/revert), a platform for developers & CTOs to build SaaS integrations 10x faster. I exited that business to a US competitor while running the (mostly bootstrapped) business from India.
 
-- OSS (open-source) software & devtools are my jam. Hit me up if you're starting up in this space, I'd love to be an early user. 
+- Before this, I was a Founding Engineer at startups in SF & India — ex-[Swiggy](https://swiggy.in), saw the blitzscale very closely in the Revenue & Growth team on the tech side, built the pricing engine. Then ex-[Flux.ai](https://flux.ai) as engineer number 5 (they raised $37M for their Series B a month ago and my early code still powers the platform).
 
-- I'm currently building a new company in AI, in San Francisco
-
+- In 2026, I'm going deep into the insurance tech space in the United States. In fact, I'm a licensed broker myself now in CA / TX / NY / FL for P&C insurance.
 
 ## Here's a little sneak peek at my body of work 🛠️
 

@@ -1,5 +1,7 @@
 # Angel Investments
 
+OSS (open-source) software & devtools are my jam. Hit me up if you're starting up in this space, I'd love to be an early user.
+
 Smol check investor in:
 
 - [Ploton AI](https://ploton.ai) — AI agent infrastructure, backed alongside Dane Knecht (CTO @ Cloudflare)
